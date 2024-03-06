@@ -1,0 +1,78 @@
+[[language]]
+name = "rust"
+auto-format = true
+indent = {tab-width = 4, unit = "    "}
+language-servers = ["scls", "rust-analyzer"]
+
+# [language.auto-pairs]
+# '(' = ')'
+# '{' = '}'
+# '[' = ']'
+# '"' = '"'
+# '`' = '`'
+# '<' = '>'
+
+# [[grammar]]
+# name = "rust"
+# source = {git = "https://github.com/tree-sitter/tree-sitter-rust",  rev = "48e053397b587de97790b055a1097b7c8a4ef846"}
+
+[language-server.rust-analyzer.config.check]
+command = "clippy"
+
+[[language]]
+name = "python"
+scope = "source.python"
+injection-regex = "python"
+file-types = ["py", "pyi", "py3", "pyw", "pt1", ".pythonstartup", ".pythonrc", "SConstruct"]
+shebangs = ["python"]
+roots = [".","steup.py", "setup.cfg", "pyproject.toml"]
+comment-token = "#"
+language-servers = ["scls", "pyright", "ruff"]
+indent = {tab-width = 4, unit = "    "}
+formatter = {command = "black", args=["--quiet", "-"]}
+auto-format = true
+
+# [language.auto-pairs]
+# '(' = ')'
+# '{' = '}'
+# '[' = ']'
+# '"' = '"'
+# "'" = "'"
+# '`' = '`'
+
+# [[grammar]]
+# name = "python"
+# source = {git = "https://github.com/tree-sitter/tree-sitter-python", rev = "82f5c9937fe4300b4bec3ee0e788d642c77aab2c"}
+
+[language-server.pyright]
+command = "pyright-langserver"
+args = ["--stdio"]
+
+[language-server.pyright.config]
+reportMissingTypeStubs = false
+reportUnknownMemberType = "warning"
+reportMissingSuperCall = true
+
+[language-server.pyright.config.python.analysis]
+typeCheckingMode = "strict"
+autoImportCompletions = true
+
+[language-server.ruff]
+command = "ruff-lsp"
+
+[language-server.ruff.config]
+settings = {args=[]}
+
+[[language]]
+name = "json"
+auto-format = true
+# config = { "providerFormatter" = true, "json" = {"keeplines" = {"enable" = true}}}
+indent = { tab-width = 2, unit = "  "}
+
+[language-server.scls]
+command = "simple-completion-language-server"
+config = {max_completion_items = 20, snippets_first = false}
+
+[language-server.scls.environment]
+RUST_LOG = "debug,simple-completion-language-server=debug"
+LOG_FILE = "c:/users/dweis/AppData/local/temp/completion.log"

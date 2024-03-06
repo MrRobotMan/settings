@@ -1,0 +1,48 @@
+# theme = "dark_plus"
+theme = "onedarker"
+
+[editor]
+rulers = [80, 100]
+# shell = ["pwsh.exe", "-NoLogo", "-NoProfile", "-NoProfileLoadTime", "-Command", "$PSStyle.OutputRendering='PlainText';"]
+shell = ["nu", "-c"]
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.indent-guides]
+render = true
+character = "⸽"
+skip-levels = 1
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = false
+auto-signature-help = false
+
+[editor.soft-wrap]
+enable = true
+
+[editor.statusline]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+left = ["mode", "spinner"]
+center = ["file-name", "file-modification-indicator"]
+right = ["diagnostics", "selections", "position", "total-line-numbers", "file-encoding", "file-type"]
+
+[keys.insert]
+C-h = "signature_help"
+
+[keys.normal]
+C-s = ":write"
+# Select next matching (vscode Alt-d, n for next, N for prev)
+"@" = ["move_prev_word_start", "move_next_word_end", "search_selection"]
+C-L = ["move_prev_word_start", "move_next_word_end", "search_selection", "select_all", "select_regex" ]
+X = "extend_line_above"
+ret = ["move_line_down", "goto_line_start"]
+C-h = "signature_help"
+H = ":toggle lsp.display-inlay-hints"
+
+[keys.normal.space]
+q = ":quit"
+w = ":write"

@@ -1,0 +1,23 @@
+[[snippets]]
+prefix = "testcase"
+scope = ["rust"]
+body = '''
+#[test]
+fn test_$1() {
+	let expected=$2;
+	let actual=$3;
+	assert_eq!(expected, actual);
+}
+'''
+
+[[snippets]]
+prefix = "testmod"
+scope = ["rust"]
+body = '''
+#[cfg(test)]
+mod tests {
+	use super::*;
+	
+	$1
+}
+'''
