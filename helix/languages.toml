@@ -4,18 +4,6 @@ auto-format = true
 indent = {tab-width = 4, unit = "    "}
 language-servers = ["scls", "rust-analyzer"]
 
-# [language.auto-pairs]
-# '(' = ')'
-# '{' = '}'
-# '[' = ']'
-# '"' = '"'
-# '`' = '`'
-# '<' = '>'
-
-# [[grammar]]
-# name = "rust"
-# source = {git = "https://github.com/tree-sitter/tree-sitter-rust",  rev = "48e053397b587de97790b055a1097b7c8a4ef846"}
-
 [language-server.rust-analyzer.config.check]
 command = "clippy"
 
@@ -32,17 +20,14 @@ indent = {tab-width = 4, unit = "    "}
 formatter = {command = "black", args=["--quiet", "-"]}
 auto-format = true
 
-# [language.auto-pairs]
-# '(' = ')'
-# '{' = '}'
-# '[' = ']'
-# '"' = '"'
-# "'" = "'"
-# '`' = '`'
-
-# [[grammar]]
-# name = "python"
-# source = {git = "https://github.com/tree-sitter/tree-sitter-python", rev = "82f5c9937fe4300b4bec3ee0e788d642c77aab2c"}
+[[language]]
+name = "pwsh"
+scope = "source.ps1"
+roots = [".git", "."]
+file-types = ["ps1"]
+comment-token = "#"
+indent = {tab-width = 2, unit = "  "}
+language-servers = ["scls"]
 
 [language-server.pyright]
 command = "pyright-langserver"
@@ -76,3 +61,8 @@ config = {max_completion_items = 20, snippets_first = false}
 [language-server.scls.environment]
 RUST_LOG = "debug,simple-completion-language-server=debug"
 LOG_FILE = "c:/users/dweis/AppData/local/temp/completion.log"
+
+# [language-server.powershell]
+# command = "pwsh"
+# args = ["-NoLogo", "-NoProfile", "-Command", 'C:\users\dweis\PowerShellEditorServices\Start-EditorServices.ps1 -BundledModulesPath C:\users\dweis\PowerShellEditorServices -LogPath C:\users\dweis\PowerShellEditorServices\pwsh-es.log -SessionDetailsPath C:\users\dweis\PowerShellEditorServices\pwsh-es.session.json -FeatureFlags @() -AdditionalModules @() -HostName "Helix" -HostProfileId 0 -HostVersion 1.0.0 -LogLevel Normal']
+

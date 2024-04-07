@@ -1,5 +1,4 @@
-# theme = "dark_plus"
-theme = "onedarker"
+theme = "vintage"
 
 [editor]
 # rulers = [80, 100]

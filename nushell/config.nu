@@ -9,7 +9,7 @@
 
 use themes *
 use keybindings.nu keybind
-use user.nu 
+use user.nu *
 use menus.nu
 
 # The default config record. This is where much of your global configuration is setup.
@@ -126,4 +126,5 @@ $env.config = {
     keybindings: (keybind)
 }
 
-source ~/.oh-my-posh.nu
+use ~/.cache/starship/init.nu
+

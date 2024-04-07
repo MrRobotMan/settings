@@ -46,11 +46,15 @@ def create_right_prompt [] {
     ([$last_exit_code, (char space), $time_segment] | str join)
 }
 
+# def create_left_prompt [] {
+#     starship prompt --cmd-duration $env.CMD_DURATION_MS $'--status=($env.LAST_EXIT_CODE)'
+# }
+
 # Use nushell functions to define your right and left prompt
 $env.PROMPT_COMMAND = {|| create_left_prompt }
 # FIXME: This default is not implemented in rust code as of 2023-09-08.
 # $env.PROMPT_COMMAND_RIGHT = {|| create_right_prompt }
-$env.PROMPT_COMMAND_RIGHT = {|| "" }
+$env.PROMPT_COMMAND_RIGHT = ""
 
 # The prompt indicators are environmental variables that represent
 # the state of the prompt
@@ -104,4 +108,7 @@ $env.NU_PLUGIN_DIRS = [
 # To add entries to PATH (on Windows you might use Path), you can use the following pattern:
 # $env.PATH = ($env.PATH | split row (char esep) | prepend '/some/path')
 
-oh-my-posh init nu --config https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/blue-owl.omp.json
+mkdir ~/.cache/starship
+starship init nu | save -f ~/.cache/starship/init.nu
+$env.STARSHIP_CONFIG = ($nu.home-path | path join 'settings/starship.toml')
+
