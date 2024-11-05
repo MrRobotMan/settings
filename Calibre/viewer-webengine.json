@@ -1,0 +1,202 @@
+{
+  "geometry-of-main_window_geometry": {
+    "frame_geometry": {
+      "height": 606,
+      "width": 512,
+      "x": 448,
+      "y": 138
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 576,
+      "width": 512,
+      "x": 448,
+      "y": 168
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 576,
+      "width": 512,
+      "x": 448,
+      "y": 168
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAHAAAAAigAAA78AAALnAAABwAAAAKgAAAO/AAAC5wAAAAAAAAAABgAAAAHAAAAAqAAAA78AAALn"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.25,
+      "geometry_in_logical_pixels": {
+        "height": 864,
+        "width": 1536,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "Chimei Innolux Corporation",
+      "model": "",
+      "name": "\\\\.\\DISPLAY1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 864,
+        "width": 1536
+      },
+      "virtual_geometry": {
+        "height": 864,
+        "width": 1536,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-viewer_image_popup_geometry": {
+    "frame_geometry": {
+      "height": 153,
+      "width": 703,
+      "x": 599,
+      "y": 415
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 122,
+      "width": 703,
+      "x": 599,
+      "y": 446
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 122,
+      "width": 703,
+      "x": 599,
+      "y": 446
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAJXAAABnwAABRUAAAI3AAACVwAAAb4AAAUVAAACNwAAAAAAAAAAB4AAAAJXAAABvgAABRUAAAI3"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "",
+      "model": "",
+      "name": "\\\\.\\DISPLAY2",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1080,
+        "width": 3840,
+        "x": -1920,
+        "y": 0
+      }
+    }
+  },
+  "main_window_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAH9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAvsAAAAQAHQAbwBjAC0AZABvAGMAawAAAAAA/////wAAAIYA////+wAAABYAcwBlAGEAcgBjAGgALQBkAG8AYwBrAAAAAAD/////AAAAlAD///8AAAABAAAAAAAAAAD8AgAAAAT7AAAAFgBsAG8AbwBrAHUAcAAtAGQAbwBjAGsAAAAAAP////8AAAB7AP////sAAAAcAGIAbwBvAGsAbQBhAHIAawBzAC0AZABvAGMAawAAAAAA/////wAAAOYA////+wAAABwAaQBuAHMAcABlAGMAdABvAHIALQBkAG8AYwBrAAAAAAD/////AAAAEgD////7AAAAHgBoAGkAZwBoAGwAaQBnAGgAdABzAC0AZABvAGMAawAAAAAA/////wAAAM8A////AAACAAAAAkAAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAAB4AYQBjAHQAaQBvAG4AcwBfAHQAbwBvAGwAYgBhAHICAAAAAP////8AAAAAAAAAAA=="
+  },
+  "old_prefs_migrated": true,
+  "session_data": {
+    "controls_help_shown_count": 2,
+    "standalone_font_settings": {},
+    "standalone_misc_settings": {
+      "remember_last_read": true,
+      "remember_window_geometry": false,
+      "save_annotations_in_ebook": true,
+      "singleinstance": false
+    },
+    "standalone_recently_opened": [
+      {
+        "authors": [
+          "James S. A. Corey"
+        ],
+        "key": "C:\\Users\\dweis\\Documents\\Books\\James S. A. Corey\\Memory's Legion (The Expanse) (162)\\Memory's Legion (The Expanse) - James S. A. Corey.epub",
+        "pathtoebook": "C:\\Users\\dweis\\Documents\\Books\\James S. A. Corey\\Memory's Legion (The Expanse) (162)\\Memory's Legion (The Expanse) - James S. A. Corey.epub",
+        "timestamp": "2024-10-02T02:17:29.384Z",
+        "title": "Memory's Legion (The Expanse)"
+      },
+      {
+        "authors": [
+          "James S. A. Corey"
+        ],
+        "key": "C:\\Users\\dweis\\Documents\\Books\\James S. A. Corey\\Leviathan Wakes (160)\\Leviathan Wakes - James S. A. Corey.epub",
+        "pathtoebook": "C:\\Users\\dweis\\Documents\\Books\\James S. A. Corey\\Leviathan Wakes (160)\\Leviathan Wakes - James S. A. Corey.epub",
+        "timestamp": "2024-09-01T02:50:03.828Z",
+        "title": "Leviathan Wakes"
+      },
+      {
+        "authors": [
+          "Anderson, Kevin J"
+        ],
+        "key": "C:\\Users\\dweis\\Documents\\Books\\Anderson, Kevin J\\Death Warmed Over (144)\\Death Warmed Over - Anderson, Kevin J.epub",
+        "pathtoebook": "C:\\Users\\dweis\\Documents\\Books\\Anderson, Kevin J\\Death Warmed Over (144)\\Death Warmed Over - Anderson, Kevin J.epub",
+        "timestamp": "2024-06-15T01:39:37.969Z",
+        "title": "Death Warmed Over"
+      },
+      {
+        "authors": [
+          "Terry Pratchett"
+        ],
+        "key": "C:\\Users\\dweis\\Documents\\Books\\Terry Pratchett\\The Shepherd's Crown (156)\\The Shepherd's Crown - Terry Pratchett.epub",
+        "pathtoebook": "C:\\Users\\dweis\\Documents\\Books\\Terry Pratchett\\The Shepherd's Crown (156)\\The Shepherd's Crown - Terry Pratchett.epub",
+        "timestamp": "2024-06-15T01:21:33.933Z",
+        "title": "The Shepherd's Crown"
+      },
+      {
+        "authors": [
+          "Terry Pratchett"
+        ],
+        "key": "C:\\Users\\dweis\\Documents\\Books\\Terry Pratchett\\Snuff (157)\\Snuff - Terry Pratchett.epub",
+        "pathtoebook": "C:\\Users\\dweis\\Documents\\Books\\Terry Pratchett\\Snuff (157)\\Snuff - Terry Pratchett.epub",
+        "timestamp": "2024-06-15T01:21:26.602Z",
+        "title": "Snuff"
+      },
+      {
+        "authors": [
+          "Terry Pratchett"
+        ],
+        "key": "C:\\Users\\dweis\\Documents\\Books\\Terry Pratchett\\Raising Steam (158)\\Raising Steam - Terry Pratchett.epub",
+        "pathtoebook": "C:\\Users\\dweis\\Documents\\Books\\Terry Pratchett\\Raising Steam (158)\\Raising Steam - Terry Pratchett.epub",
+        "timestamp": "2024-06-15T01:21:17.442Z",
+        "title": "Raising Steam"
+      },
+      {
+        "authors": [
+          "Terry Pratchett"
+        ],
+        "key": "C:\\Users\\dweis\\Documents\\Books\\Terry Pratchett\\Tiffany Aching 4-Book Collection (155)\\Tiffany Aching 4-Book Collectio - Terry Pratchett.epub",
+        "pathtoebook": "C:\\Users\\dweis\\Documents\\Books\\Terry Pratchett\\Tiffany Aching 4-Book Collection (155)\\Tiffany Aching 4-Book Collectio - Terry Pratchett.epub",
+        "timestamp": "2024-03-20T01:25:42.926Z",
+        "title": "Tiffany Aching 4-Book Collection"
+      },
+      {
+        "authors": [
+          "Pierce Brown"
+        ],
+        "key": "C:\\Users\\dweis\\Documents\\Books\\Pierce Brown\\Light Bringer (Red Rising Series) (154)\\Light Bringer (Red Rising Serie - Pierce Brown.epub",
+        "pathtoebook": "C:\\Users\\dweis\\Documents\\Books\\Pierce Brown\\Light Bringer (Red Rising Series) (154)\\Light Bringer (Red Rising Serie - Pierce Brown.epub",
+        "timestamp": "2023-07-31T23:07:02.404Z",
+        "title": "Light Bringer (Red Rising Series)"
+      },
+      {
+        "authors": [
+          "Terry Pratchett"
+        ],
+        "key": "C:\\Users\\dweis\\Documents\\Books\\Terry Pratchett\\Reaper Man_ A Novel of Discworld (153)\\Reaper Man_ A Novel of Discworl - Terry Pratchett.epub",
+        "pathtoebook": "C:\\Users\\dweis\\Documents\\Books\\Terry Pratchett\\Reaper Man_ A Novel of Discworld (153)\\Reaper Man_ A Novel of Discworl - Terry Pratchett.epub",
+        "timestamp": "2023-02-03T03:26:44.233Z",
+        "title": "Reaper Man: A Novel of Discworld"
+      }
+    ]
+  }
+}

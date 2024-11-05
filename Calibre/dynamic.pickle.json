@@ -1,0 +1,45 @@
+{
+  "add a plugin dialog": "C:\\Users\\dweis\\OneDrive\\Desktop",
+  "add books dialog dir": "C:\\Users\\dweis\\OneDrive\\Desktop",
+  "add books dialog dir-last-used-filter-spec-all-files": false,
+  "auto add path choose": "C:\\Users\\dweis\\OneDrive\\Documents\\My Digital Editions",
+  "catalogs_to_be_synced": {
+    "__class__": "set",
+    "__value__": []
+  },
+  "choose library location": "C:\\Users\\dweis\\Documents\\Books",
+  "database location dialog": "C:\\Users\\dweis\\Documents\\Books",
+  "export-calibre-dir": "C:\\Users\\dweis\\settings\\Calibre",
+  "notified-version-updates": {
+    "__class__": "set",
+    "__value__": [
+      "7.2",
+      "6.23",
+      "7.0",
+      "7.7",
+      "6.11",
+      "7.19",
+      "7.20",
+      "6.9",
+      "6.22",
+      "7.12",
+      "6.12",
+      "7.17",
+      "6.29",
+      "6.5",
+      "6.25"
+    ]
+  },
+  "sort_history": [
+    [
+      "timestamp",
+      false
+    ],
+    [
+      "timestamp",
+      false
+    ]
+  ],
+  "welcome_wizard_device": "kindle_pw",
+  "welcome_wizard_was_run": true
+}

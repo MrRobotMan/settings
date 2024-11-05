@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>lineedit_history_choose_library_dialog</key>
+	<array>
+		<string>C:\Users\dweis\Documents\Books</string>
+		<string>C:\Users\dweis\OneDrive\Documents\Books</string>
+	</array>
+	<key>lineedit_history_preferences_setting_auto_add_path</key>
+	<array>
+		<string>C:\Users\dweis\OneDrive\Documents\My Digital Editions</string>
+	</array>
+	<key>lineedit_history_tag_browser_search</key>
+	<array>
+		<string>export</string>
+	</array>
+</dict>
+</plist>
