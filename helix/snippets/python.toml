@@ -2,6 +2,48 @@
 prefix = "main"
 scope = ["python"]
 body = '''
+def main():
+    $1
+    
 if __name__ == "__main__":
-  $1
+    main()
+'''
+
+
+[[snippets]]
+prefix = "doc_function"
+scope = ["python"]
+body = '''
+"""$1
+
+Parameters
+----------
+arg : type, optional
+    Description of parameter `arg`
+    
+Returns
+-------
+type
+    Description
+
+Raises
+------
+SomeException
+    Description
+"""
+'''
+
+[[snippets]]
+prefix = "doc_class"
+scope = ["python"]
+body = '''
+"""
+$1
+
+Attributes
+----------
+arg : type
+    Description of arugment `arg`
+  
+"""
 '''

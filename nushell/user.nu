@@ -5,7 +5,7 @@ export def off []: nothing -> nothing {
 
 
 # Split the current terminal vertically. 
-export def split [] {
+export def vsplit [] {
     wt -w 0 sp -p 'Nushell' -V -d .  
 }
 
@@ -27,19 +27,17 @@ export def coffee [sites?: string]: nothing -> nothing {
         "https://buttersafe.com/" 
         "https://thefarside.com/" 
         "http://poorlydrawnlines.com/" 
-        "https://webtoons.com/en/challenge/system32comics/list?title_no=235074&page=1" 
-        "https://www.stbeals.com"
         ]
 
     let default = [$comics , $news]
 
     match $sites {
-        news => ($news | launch),
-        comics => ($comics | launch),
-        all => ($comics | append $news | launch),
+        news => ($news | enumerate | launch),
+        comics => ($comics |enumerate | launch),
+        all => ($comics | append $news | enumerate | launch),
         _ => {
             for $it in ($default | enumerate) {
-                ($it.item | launch)
+                ($it.item | enumerate | launch)
                 if $it.index != ($default | length) - 1 {
                   try {input "Press Enter to continue..."};
                 }
@@ -49,9 +47,12 @@ export def coffee [sites?: string]: nothing -> nothing {
 }
 
 # Launch a list of sites in the browser
-def launch []: list<string> -> nothing {
+def launch [] -> nothing {
     each {|site| 
-        start $site
+        start $site.item
+        if $site.index == 0 {
+            sleep 2sec
+        }
     }
     return
 }
@@ -72,3 +73,8 @@ export def unzip [
     if $delete {rm $file}
     $outdir 
 }
+
+# Search bitwarden for login info.
+export def bitwarden [search_key: string] {
+    bw list items --search $search_key | ConvertFrom-Json | Select @{n="Username"; e={$_.login.username}}, @{n="Password"; e={$_.login.password}}}
+

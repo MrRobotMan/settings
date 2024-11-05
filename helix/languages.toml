@@ -1,11 +1,17 @@
 [[language]]
+name = "bat"
+scope = "source.bat"
+indent = {tab-width = 1, unit = " "}
+file-types = ["bat", "cmd"]
+comment-token = "::"
+language-servers = ["scls"]
+
+[[language]]
 name = "rust"
 auto-format = true
 indent = {tab-width = 4, unit = "    "}
 language-servers = ["scls", "rust-analyzer"]
 
-[language-server.rust-analyzer.config.check]
-command = "clippy"
 
 [[language]]
 name = "python"
@@ -17,14 +23,20 @@ roots = [".","steup.py", "setup.cfg", "pyproject.toml"]
 comment-token = "#"
 language-servers = ["scls", "pyright", "ruff"]
 indent = {tab-width = 4, unit = "    "}
-formatter = {command = "black", args=["--quiet", "-"]}
+formatter = {command = "ruff", args=["format", "--line-length", "100", "docstring-code-format", "true", "--quiet", "-"]}
 auto-format = true
+
+[[language]]
+name = "json"
+auto-format = true
+formatter = {command = "npx", args = ["prettier", "--parser", "json"]}
+indent = { tab-width = 2, unit = "  "}
 
 [[language]]
 name = "pwsh"
 scope = "source.ps1"
 roots = [".git", "."]
-file-types = ["ps1"]
+file-types = ["ps1", "psm"]
 comment-token = "#"
 indent = {tab-width = 2, unit = "  "}
 language-servers = ["scls"]
@@ -43,16 +55,15 @@ typeCheckingMode = "strict"
 autoImportCompletions = true
 
 [language-server.ruff]
-command = "ruff-lsp"
+command = "ruff"
+args = ["server"]
 
 [language-server.ruff.config]
 settings = {args=[]}
 
-[[language]]
-name = "json"
-auto-format = true
-# config = { "providerFormatter" = true, "json" = {"keeplines" = {"enable" = true}}}
-indent = { tab-width = 2, unit = "  "}
+[language-server.rust-analyzer.config.check]
+command = "clippy"
+
 
 [language-server.scls]
 command = "simple-completion-language-server"

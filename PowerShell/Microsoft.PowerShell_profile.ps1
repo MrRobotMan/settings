@@ -4,6 +4,7 @@ Set-Alias op Invoke-Item
 Set-Alias off Stop-Computer
 Set-Alias cppa Copy-Path
 
+# Default if Starship fails somehow
 function prompt {
     Write-Host "`n $env:COMPUTERNAME" -NoNewline -ForegroundColor DarkGreen
     Write-Host " in " -NoNewline
@@ -114,7 +115,6 @@ function unzip {
 
     .EXAMPLE
     PS> unzip .\test.zip
-
     .EXAMPLE
     PS> unzip .\test.zip "output"
 
@@ -122,6 +122,21 @@ function unzip {
     PS> unzip -Zipfile .\test.zip -Directory "output"
     #>
 
+}
+
+function off {
+    shutdown /P
+}
+
+function vsplit {
+    wt -w 0 sp -p 'PowerShell' -V -d
+}
+
+function bitwarden {
+    param (
+        [string]key
+    )
+    bw list items --search $key
 }
 
 Invoke-Expression (&starship init powershell)
