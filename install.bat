@@ -7,13 +7,15 @@ set %settings% = %userprofile%\settings
 
 :: Create links  
 echo Creating Symlinks
-:: mkdir %userprofile%\OneDrive\Docuemnts\PowerShell
-:: mklink /H %userprofile%\OneDrive\Documents\PowerShell\Microsoft.PowerShell_profile.ps1 %settings%\PowerShell\Microsoft.Powershell_profile.ps1
-:: mklink /J %appdata%\Helix %settings%\Helix
-:: mkdir %appdata%\dystroy\bacon\prefs
-:: mklink /H %appdata%\dystroy\bacon\prefs\config.toml %settings%\bacon\config.toml
-:: mkdir %userprofile%\.config
-:: mklink /H %userprofile%\.config\starship.toml %settings%\starship\starship.toml
+mkdir %userprofile%\OneDrive\Docuemnts\PowerShell
+mklink /H %userprofile%\OneDrive\Documents\PowerShell\Microsoft.PowerShell_profile.ps1 %settings%\PowerShell\Microsoft.Powershell_profile.ps1
+mklink /J %appdata%\Helix %settings%\Helix
+mkdir %appdata%\dystroy\bacon\prefs
+mklink /H %appdata%\dystroy\bacon\prefs\config.toml %settings%\bacon\config.toml
+mkdir %userprofile%\.config
+mklink /H %userprofile%\.config\starship.toml %settings%\starship\starship.toml
+mklink /J %appdata%\calibre %settings%\Calibre
+
 
 set progs=Bitwarden.Bitwarden 7zip.7zip Git.Git Logiech.OptionsPlus Mozilla.Firefox VideoLAN.VLC OpenJS.NodeJS
 set progs=%progs% TheDocumentFoundation.LibreOffice calibre.calibre Box.Box Foxit.FoxitReader
@@ -80,6 +82,5 @@ if "%~gh_email%" == "" (
 set /P editor=Do you want to use Helix as your default Git editor [y/n]:
 if "%~editor%"=="" git config --global core.editor "hx"
  
-:: Calibre
-set /P nothing=Reimport Calibre settings (Books -> Export/Import all calible data)
+:: Update DeDRM
 set /P nothing=Download and update (if needed) DeDRM from https://github.com/apprenticeharper/DeDRM_tools/releases/latest
