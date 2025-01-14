@@ -2,7 +2,7 @@
 :: This script creates symlinks from the home directory to the desired settings files in $HOME\settings
 :: And installs software
 
-cd %userhome%
+cd %userprofile%
 set %settings% = %userprofile%\settings
 
 :: Create links  
@@ -21,7 +21,7 @@ set progs=Bitwarden.Bitwarden 7zip.7zip Git.Git Logiech.OptionsPlus Mozilla.Fire
 set progs=%progs% TheDocumentFoundation.LibreOffice calibre.calibre Box.Box Foxit.FoxitReader
 set progs=%progs% Valve.Steam AOMEI.Backupper.Standard Microsoft.PowerShell Bitwarden.CLI Discord.Discord
 set progs=%progs% FreeCAD.FreeCAD Helix.Helix astral-sh.ruff astral-sh.uv Microsoft.WindowsTerminal
-set progs=%progs% Microsoft.VisualStudio.2022.BuildTools Rustlang.Rustup
+set progs=%progs% Microsoft.VisualStudio.2022.BuildTools Rustlang.Rustup Microsoft.DotNet.SDK.8
 
 :: Install programs
 for %%p in (%progs%) do (
@@ -30,11 +30,11 @@ for %%p in (%progs%) do (
 )
 
 :: Update PATH
-set "PATH=%ProgramFiles%\Git\cmd;%ProgramFiles%\NodeJS;%userprofile%\.cargo\bin;%LocalAppData%\Microsoft\Winget\Packages\astral-sh.uv_Microsoft.Winget.Source_8wekyb3d8bbwe;Microsoft\WinGet\Packages\Bitwarden.CLI_Microsoft.Winget.Source_8wekyb3d8bbwe;%ProgramFiles%\Powershell\7;%PATH%"
+set "PATH=%ProgramFiles%\Git\cmd;%ProgramFiles%\NodeJS;%userprofile%\.cargo\bin;%LocalAppData%\Microsoft\Winget\Packages\astral-sh.uv_Microsoft.Winget.Source_8wekyb3d8bbwe;Microsoft\WinGet\Packages\Bitwarden.CLI_Microsoft.Winget.Source_8wekyb3d8bbwe;%ProgramFiles%\Powershell\7;%ProgramFiles%\dotnet;%PATH%"
 
 :: install nerdfont
 echo Installing Inconsolata Nerd Font
-git clone --filter=blob:none --sparse https://github.com/ryanoasis/nerd-fonts.git
+git clone --filter=blob:none --sparse https:\\github.com\ryanoasis\nerd-fonts.git
 pwsh -NoProfile -Command "nerd-fonts\install.ps1 Inconsolata" -ExecutionPolicy Bypass
 del /Q nerd-fonts
 
@@ -49,7 +49,19 @@ for %%p in (prettier pyright typescript-language-server) do (
 )
 
 echo Installing simple-completion-language-server
-cargo.exe install --git https://github.com/estim/simple-completion-language-server.git
+cargo.exe install --git https:\\github.com\estim\simple-completion-language-server.git
+
+echo Installing PowerShellEditorServices
+git clone https:\\github.com\PowerShell\PowerShellEditorServices.git
+pwsh -NoProfile -Command "Install-Module InvokeBuild -Scope CurrentUser" -ExecutionPolicy Bypass
+pwsh -NoProfile -Command "Install-Module platyPS -Scope CurrentUser" -ExecutionPolicy Bypass
+cd settings\PowerShellEditorServices
+del NuGet.Config
+pwsh -NoProfile -Command "Invoke-Build Build"
+mv module\PowerShellEditorServices C:\
+cd %userprofile%
+del /F PowerShellEditorServices
+
 
 :: Install Rust programs
 for %%p in (bacon du-dust speedtest-rs starship) do (
