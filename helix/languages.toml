@@ -33,7 +33,7 @@ formatter = {command = "npx", args = ["prettier", "--parser", "json"]}
 indent = { tab-width = 2, unit = "  "}
 
 [[language]]
-name = "pwsh"
+name = "powershell"
 scope = "source.ps1"
 roots = [".git", "."]
 file-types = ["ps1", "psm"]
@@ -73,7 +73,7 @@ config = {max_completion_items = 20, snippets_first = false}
 RUST_LOG = "debug,simple-completion-language-server=debug"
 LOG_FILE = "c:/users/dweis/AppData/local/temp/completion.log"
 
-# [language-server.powershell]
-# command = "pwsh"
-# args = ["-NoLogo", "-NoProfile", "-Command", 'C:\users\dweis\PowerShellEditorServices\Start-EditorServices.ps1 -BundledModulesPath C:\users\dweis\PowerShellEditorServices -LogPath C:\users\dweis\PowerShellEditorServices\pwsh-es.log -SessionDetailsPath C:\users\dweis\PowerShellEditorServices\pwsh-es.session.json -FeatureFlags @() -AdditionalModules @() -HostName "Helix" -HostProfileId 0 -HostVersion 1.0.0 -LogLevel Normal']
+[language-server.powershell]
+command = "pwsh"
+args = ["-NoLogo", "-NoProfile", "-Command", 'C:\PowerShellEditorServices\Start-EditorServices.ps1 -Stdio']
 

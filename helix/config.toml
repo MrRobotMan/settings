@@ -2,11 +2,13 @@ theme = "vintage"
 
 [editor]
 # rulers = [80, 100]
-# shell = ["pwsh.exe", "-NoLogo", "-NoProfile", "-NoProfileLoadTime", "-Command", "$PSStyle.OutputRendering='PlainText';"]
-shell = ["nu", "-c"]
+shell = ["pwsh.exe", "-NoLogo", "-NoProfile", "-NoProfileLoadTime", "-Command", "$PSStyle.OutputRendering='PlainText';"]
 bufferline = "multiple"
 cursorline = true
-# cursorcolumn = true
+end-of-line-diagnostics = "hint"
+
+[editor.inline-diagnostics]
+cursor-line = "error"
 
 [editor.cursor-shape]
 insert = "bar"
