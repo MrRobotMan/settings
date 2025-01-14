@@ -280,26 +280,26 @@
     "frame_geometry": {
       "height": 1040,
       "width": 1920,
-      "x": -33,
-      "y": 21
+      "x": 0,
+      "y": -8
     },
     "full_screened": false,
     "geometry": {
       "height": 1009,
       "width": 1920,
-      "x": -33,
-      "y": 52
+      "x": 0,
+      "y": 23
     },
-    "maximized": false,
+    "maximized": true,
     "normal_geometry": {
       "height": 1009,
       "width": 1920,
-      "x": -33,
-      "y": 52
+      "x": 0,
+      "y": 23
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAD////fAAAAFQAAB14AAAQk////3wAAADQAAAdeAAAEJAAAAAAAAAAAB4D////fAAAANAAAB14AAAQk"
+      "__value__": "AdnQywADAAAAAAAA////+AAAB38AAAQHAAAAAAAAABcAAAd/AAAEBwAAAAACAAAAB4AAAAAAAAAAFwAAB38AAAQH"
     },
     "screen": {
       "depth": 32,
@@ -637,26 +637,26 @@
     "frame_geometry": {
       "height": 748,
       "width": 929,
-      "x": 495,
-      "y": 113
+      "x": 743,
+      "y": 119
     },
     "full_screened": false,
     "geometry": {
       "height": 717,
       "width": 929,
-      "x": 495,
-      "y": 144
+      "x": 743,
+      "y": 150
     },
     "maximized": false,
     "normal_geometry": {
       "height": 717,
       "width": 929,
-      "x": 495,
-      "y": 144
+      "x": 743,
+      "y": 150
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAHvAAAAcQAABY8AAANcAAAB7wAAAJAAAAWPAAADXAAAAAAAAAAAB4AAAAHvAAAAkAAABY8AAANc"
+      "__value__": "AdnQywADAAAAAALnAAAAdwAABocAAANiAAAC5wAAAJYAAAaHAAADYgAAAAAAAAAAB4AAAALnAAAAlgAABocAAANi"
     },
     "screen": {
       "depth": 32,
@@ -692,7 +692,7 @@
     "__value__": "AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAq0AAAAFAQEBAAAAAAAAAAAAAAAAAGT/////AAAAhAAAAAAAAAAFAAAAvQAAAAEAAAAAAAAAdAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAtAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAD6AAAAAAAAAAAAA=="
   },
   "library_usage_stats": {
-    "C:/Users/dweis/Documents/Books": 62
+    "C:/Users/dweis/Documents/Books": 66
   },
   "main_window_central_widget_state": {
     "layout": "wide",
