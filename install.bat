@@ -22,6 +22,7 @@ set progs=%progs% TheDocumentFoundation.LibreOffice calibre.calibre Box.Box Foxi
 set progs=%progs% Valve.Steam AOMEI.Backupper.Standard Microsoft.PowerShell Bitwarden.CLI Discord.Discord
 set progs=%progs% FreeCAD.FreeCAD Helix.Helix astral-sh.ruff astral-sh.uv Microsoft.WindowsTerminal
 set progs=%progs% Microsoft.VisualStudio.2022.BuildTools Rustlang.Rustup Microsoft.DotNet.SDK.8
+set progs=%progs% Proton.ProtonDrive JesseDuffield.lazygit
 
 :: Install programs
 for %%p in (%progs%) do (
