@@ -64,5 +64,3 @@ line_format = "{kind} {path}:{line}:{column} {message}"
 # t = "job:test"
 # r = "job:run"
 
-
-default_job = "clippy"
