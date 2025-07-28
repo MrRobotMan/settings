@@ -3,7 +3,7 @@
 :: And installs software
 
 cd %userprofile%
-set %settings% = %userprofile%\settings
+set %settings% = %userprofile%\.settings
 
 :: Create links  
 echo Creating Symlinks
@@ -56,7 +56,7 @@ echo Installing PowerShellEditorServices
 git clone https:\\github.com\PowerShell\PowerShellEditorServices.git
 pwsh -NoProfile -Command "Install-Module InvokeBuild -Scope CurrentUser" -ExecutionPolicy Bypass
 pwsh -NoProfile -Command "Install-Module platyPS -Scope CurrentUser" -ExecutionPolicy Bypass
-cd settings\PowerShellEditorServices
+cd .settings\PowerShellEditorServices
 del NuGet.Config
 pwsh -NoProfile -Command "Invoke-Build Build"
 mv module\PowerShellEditorServices C:\

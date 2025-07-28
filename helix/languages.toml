@@ -21,9 +21,9 @@ file-types = ["py", "pyi", "py3", "pyw", "pt1", ".pythonstartup", ".pythonrc", "
 shebangs = ["python"]
 roots = [".","steup.py", "setup.cfg", "pyproject.toml"]
 comment-token = "#"
-language-servers = ["scls", "pyright", "ruff"]
+language-servers = ["ruff", "scls"] # , "pyright"]
 indent = {tab-width = 4, unit = "    "}
-formatter = {command = "ruff", args=["format", "--line-length", "100", "docstring-code-format", "true", "--quiet", "-"]}
+# formatter = {command = "ruff", args=["format", "--line-length", "100", "docstring-code-format", "true", "--quiet", "-"]}
 auto-format = true
 
 [[language]]
@@ -58,8 +58,9 @@ autoImportCompletions = true
 command = "ruff"
 args = ["server"]
 
-[language-server.ruff.config]
-settings = {args=[]}
+[language-server.ruff.config.settings]
+lint.preview =true
+
 
 [language-server.rust-analyzer.config.check]
 command = "clippy"
@@ -69,9 +70,9 @@ command = "clippy"
 command = "simple-completion-language-server"
 config = {max_completion_items = 20, snippets_first = false}
 
-[language-server.scls.environment]
-RUST_LOG = "debug,simple-completion-language-server=debug"
-LOG_FILE = "c:/users/dweis/AppData/local/temp/completion.log"
+# [language-server.scls.environment]
+# RUST_LOG = "debug,simple-completion-language-server=debug"
+# LOG_FILE = "c:/users/dweis/AppData/local/temp/completion.log"
 
 [language-server.powershell]
 command = "pwsh"
