@@ -15,6 +15,8 @@ mklink /H %appdata%\dystroy\bacon\prefs\config.toml %settings%\bacon\config.toml
 mkdir %userprofile%\.config
 mklink /H %userprofile%\.config\starship.toml %settings%\starship\starship.toml
 mklink /J %appdata%\calibre %settings%\Calibre
+mkdir %appdata%\lazygit
+mklink /H %appdata%\lazygit\config.yml %settings%\lazygit\config.yml
 
 
 set progs=Bitwarden.Bitwarden 7zip.7zip Git.Git Logiech.OptionsPlus Mozilla.Firefox VideoLAN.VLC OpenJS.NodeJS
