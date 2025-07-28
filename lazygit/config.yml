@@ -1,0 +1,10 @@
+customCommands:
+  - key: '<c-C>'
+    context: 'global'
+    command: "git commit --no-verify {{.Form.CommitSummary | quote}}"
+    loadingText: 'commiting'
+    prompts: 
+      - type: 'input'
+        title: 'Commit Summary'
+        key: 'CommitSummary'
+    output: 'popup'
