@@ -1,5 +1,15 @@
 line-length = 100
 
+[lint.isort]
+force-sort-within-sections = true
+
+[format]
+preview = true
+quote-style = "double"
+indent-style = "space"
+docstring-code-format = true
+docstring-code-line-length = 50
+
 # RUFF DEFAULTS FOR REF
 # select = [
 #     "F",    # Pyflakes – detects syntax errors and basic mistakes
@@ -9,6 +19,8 @@ line-length = 100
 # ]
 
 [lint]
+preview = true
+flake8-annotations.ignore-fully-untyped = false
 extend-select = [
     "E",    # Pycodestyle errors (style issues)
     "W",    # Pycodestyle warnings (style issues)
@@ -62,7 +74,6 @@ extend-select = [
     "DOC",  # Pydoclint – docstring linting and consistency
     "RUF",  # Ruff-specific rules – additional Ruff checks
 ]
-
 ignore = [
     "E501",  # Pycodestyle - line too long
     "D1",    # Pydocstyle - missing docstring in public module, class, or function
@@ -75,15 +86,3 @@ ignore = [
     "ANN204", # Flake8-annotations - Missing return type annotation for special method
     "COM812"
 ]
-
-flake8-annotations.ignore-fully-untyped = false
-
-[lint.isort]
-force-sort-within-sections = true
-
-[format]
-preview = true
-quote-style = "double"
-indent-style = "space"
-docstring-code-format = true
-docstring-code-line-length = 50
