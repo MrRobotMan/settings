@@ -72,15 +72,17 @@ ignore = [
     "D401",  # Pydocstyle - Checks for docstring first lines that are not in an imperative mood.
     "S311",  # Flake8-bandit - Standard pseudo-random generators are not suitable for security/cryptographic purposes
     "FA102", # Flake8-future-annotations - Missing `from __future__ import annotations`, but uses PEP 604 union
+    "ANN204", # Flake8-annotations - Missing return type annotation for special method
+    "COM812"
 ]
 
 flake8-annotations.ignore-fully-untyped = false
 
 [lint.isort]
 force-sort-within-sections = true
-required-imports = ["from __future__ import annotations"]
 
 [format]
+preview = true
 quote-style = "double"
 indent-style = "space"
 docstring-code-format = true
