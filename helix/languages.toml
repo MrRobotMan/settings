@@ -51,6 +51,9 @@ reportMissingTypeStubs = false
 reportUnknownMemberType = "warning"
 reportMissingSuperCall = true
 
+[language-server.pyright.config.python]
+pythonPath = ".venv\\scripts\\python"
+
 [language-server.pyright.config.python.analysis]
 typeCheckingMode = "strict"
 diagnosticMode = "workspace"
