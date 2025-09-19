@@ -1,4 +1,4 @@
-theme = "vintage"
+theme = "gruvbox-material"
 
 [editor]
 rulers = [100]
